@@ -6,13 +6,25 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import "RPSController.h"
 
-int main(int argc, char * argv[]) {
-    NSString * appDelegateClassName;
+int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // Setup code that might create autoreleased objects goes here.
-        appDelegateClassName = NSStringFromClass([AppDelegate class]);
+        NSLog(@"RPSGame!");
+        
+        // Start the game with controller
+        RPSController *controller = [[RPSController alloc]init];
+        
+        // Human player choose ...
+        [controller throwDown:Paper];
+        
+        NSString *resultsMessage;
+        
+        // Who wins
+//        resultsMessage = [controller messageForGame:controller.game];
+        
+        NSLog(@"%@", resultsMessage);
+        
     }
-    return UIApplicationMain(argc, argv, nil, appDelegateClassName);
+    return 0;
 }
