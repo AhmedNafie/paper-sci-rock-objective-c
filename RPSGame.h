@@ -12,6 +12,12 @@
 @property (nonatomic) RPSTurn *firstTurn;
 @property (nonatomic) RPSTurn *secondTurn;
 
--(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn secondTurn: (RPSTurn*)computerTurn;
+-(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn
+                      secondTurn: (RPSTurn*)computerTurn;
+
+-(RPSTurn*) winner;
+-(RPSTurn*) looser;
+-(NSString*) resultsString: (RPSGame*) game;
+
 
 @end

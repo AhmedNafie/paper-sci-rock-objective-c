@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
         NSString *resultsMessage;
         
         // Who wins
-//        resultsMessage = [controller messageForGame:controller.game];
+        resultsMessage = [controller messageForGame:controller.game];
         
         NSLog(@"%@", resultsMessage);
         

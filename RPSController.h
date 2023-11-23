@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) RPSGame *game;
 -(void)throwDown:(Move) playersMove;
+- (NSString*)messageForGame:(RPSGame*)game;
+
 @end
 
 NS_ASSUME_NONNULL_END

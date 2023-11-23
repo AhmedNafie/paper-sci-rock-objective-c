@@ -16,6 +16,24 @@
     
     self.game = [[RPSGame alloc] initWithFirstTurn:playersTurn
                                         secondTurn:computersTurn];
+}
+
+-(NSString*)messageForGame:(RPSGame*)game {
+    // First, handle the tie
+    if(game.firstTurn.description == game.secondTurn.description) {
+        return @"It's a tie";
+    } else {
+    
+    NSString *winnerString = [[game winner] description];
+    NSString *loserString = [[game looser] description];
+    NSString *resultsString = [game resultsString: game];
+    
+    // Build the resultsString here.
+    NSString *wholeString =  [NSString stringWithFormat:@"%@ %@ %@ %@ %@", winnerString, @" defeats ", loserString, @".",  resultsString];
+        
+    return wholeString;
+    }
     
 }
+
 @end
