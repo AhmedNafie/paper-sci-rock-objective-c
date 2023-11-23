@@ -14,7 +14,7 @@
     RPSTurn *playersTurn = [[RPSTurn alloc]initWithMove:playersMove];
     RPSTurn *computersTurn = [[RPSTurn alloc] init];
     
-    self.game = [[RPSgame alloc] initWithFirstTurn:playersTurn
+    self.game = [[RPSGame alloc] initWithFirstTurn:playersTurn
                                         secondTurn:computersTurn];
     
 }
