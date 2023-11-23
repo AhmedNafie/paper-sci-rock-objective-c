@@ -20,6 +20,18 @@
     return self;
 }
 
+-(instancetype)init {
+    
+    self = [super init];
+    
+    if (self){
+        _move = [self generateMove];
+    }
+    
+    return self;
+}
+
+
 -(Move)generateMove  {
     
     NSUInteger randomNumber = arc4random_uniform(3);
