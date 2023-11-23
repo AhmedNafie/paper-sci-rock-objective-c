@@ -22,11 +22,10 @@
 
 -(RPSTurn*)winner {
     return [self.firstTurn defeats:self.secondTurn] ? self.firstTurn : self.secondTurn;
-
 }
+
 -(RPSTurn*)looser {
     return [self.firstTurn defeats:self.secondTurn] ? self.secondTurn : self.firstTurn;
-
 }
 
 - (NSString*) resultsString: (RPSGame*) game {

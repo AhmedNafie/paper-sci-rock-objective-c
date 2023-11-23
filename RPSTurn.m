@@ -12,7 +12,6 @@
 -(instancetype)initWithMove:(Move) move {
     
     self = [super init];
-    
     if (self){
         _move = move;
     }
@@ -67,20 +66,16 @@
         case Rock:
             return @"Rock";
             break;
-        
         case Paper:
             return @"Paper";
             break;
-        
         case Scissors:
             return @"Scissors";
             break;
-            
         default:
             return @"Invalid";
             break;
     }
-    
 }
 
 @end

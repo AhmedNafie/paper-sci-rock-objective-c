@@ -14,10 +14,8 @@
 
 -(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn
                       secondTurn: (RPSTurn*)computerTurn;
-
 -(RPSTurn*) winner;
 -(RPSTurn*) looser;
 -(NSString*) resultsString: (RPSGame*) game;
-
 
 @end

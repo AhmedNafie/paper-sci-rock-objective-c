@@ -54,6 +54,7 @@
 		45A73DD02B0B9446003FAADC = {
 			isa = PBXGroup;
 			children = (
+				45A73DEE2B0B9448003FAADC /* main.m */,
 				4577E26A2B0CD9CF00B3C3B8 /* RPSController.h */,
 				4577E26B2B0CD9CF00B3C3B8 /* RPSController.m */,
 				45A73DFB2B0B949E003FAADC /* RPSTurn.h */,
@@ -86,7 +87,6 @@
 				45A73DE82B0B9448003FAADC /* Assets.xcassets */,
 				45A73DEA2B0B9448003FAADC /* LaunchScreen.storyboard */,
 				45A73DED2B0B9448003FAADC /* Info.plist */,
-				45A73DEE2B0B9448003FAADC /* main.m */,
 			);
 			path = "Paper sci rock";
 			sourceTree = "<group>";
