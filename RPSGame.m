@@ -32,5 +32,4 @@
     return [game.firstTurn defeats:game.secondTurn] ? @"You Win!" : @"You Lose!";
 }
 
-
 @end
